@@ -10,7 +10,8 @@ if (isset($_POST['checkout'])) {
         $userId = $_SESSION['user_id'];
 
     } else {
-        $message = 'No user is currently logged in. Please <a href="signIn.php">log in</a> to proceed.';
+        echo '<p class="alert alert-error">No user is currently logged in. Please <a href="signIn.php">log in</a> to proceed.</p>';
+        exit();
     }
 
     // Retrieving cart items from the POST data

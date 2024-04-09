@@ -304,6 +304,7 @@ nav#pjnav ul.categories a.active {
         padding: 10px 20px;
         font-size: 1rem;
         margin-top: 15px;
+        margin-right: 50px;
     }
 
     .searchBar input[type="text"], .form-buttons input {

@@ -10,9 +10,7 @@ if (isset($_POST['checkout'])) {
         $userId = $_SESSION['user_id'];
 
     } else {
-        echo '
-            <p class="alert alert-error">No user is currently logged in. Please <a href="signin.php">log in</a> to proceed.</p>';
-        exit();
+        $message = 'No user is currently logged in. Please <a href="signIn.php">log in</a> to proceed.';
     }
 
     // Retrieving cart items from the POST data
@@ -177,11 +175,9 @@ if ($stmt1 = mysqli_prepare($connection, $query)) {
     <main id="cart">
         <h2>Shopping Cart</h2>
 
-
-        <!--    --><?php //if (!empty($message)): ?>
-        <!--        <p class="alert alert-error">--><?php //echo $message; ?>
-        <!--</p>-->
-        <!--    --><?php //endif; ?>
+            <?php if (!empty($message)): ?>
+                <p class="alert alert-error"><?php echo $message; ?></p>
+            <?php endif; ?>
 
         <div id="empty_cart">
             <a onclick="clearCart()" href=""><img id="binImg" src="images_assignment/bin.png" alt="Bin image"></a>

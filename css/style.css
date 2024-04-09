@@ -1,0 +1,234 @@
+/* Styling for the body of the webpage */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Styling for the header element */
+header {
+    background-color: #BE1622;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    flex: 1;
+}
+
+/* Styling for the navigation bar list */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+/* Styling for navigation links */
+nav a {
+    text-decoration: none;
+    color: white;
+    justify-content: center;
+}
+
+
+h2 {
+    color: sandybrown;
+}
+
+/* Styling for the main area */
+main {
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+}
+
+/* Styling for the footer area */
+footer {
+    background-color: #34516C;
+    color: white;
+    text-align: center;
+    padding: 20px 5px;
+}
+
+/* Styling for the flex container inside the footer */
+.fdiv {
+    display: inline-block;
+    margin: 0 150px;
+    vertical-align: top;
+}
+
+/* Styling for the unordered lists inside footer's flex items */
+.fdiv ul {
+    list-style: none;
+    color: white;
+    margin: 10px 0;
+    padding: 0;
+}
+
+
+/*!* Styling for the links throughout the page *!*/
+a {
+    padding: 5px;
+    text-align: center;
+    color: lightblue;
+    list-style: none;
+}
+
+/* Styling for the containers that hold videos */
+.video-container {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    margin-bottom: 20px;
+}
+
+/* Styling for the responsive iframe elements */
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin-top: 110px;
+}
+
+
+/* Additional styles for the video containers */
+.video-container h2,
+.video-container p {
+    text-align: left;
+}
+
+/* Wrapper for iframe elements */
+.iframe-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+}
+
+#menuButton {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: white;
+}
+
+/* Styling for the offers container */
+.offers{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* Styling for individual offer cards */
+.offer {
+    flex: 0 1 400px;
+    padding: 20px;
+    background-color: rgba(52,81,108,0.3);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Styling for offer titles */
+.offer .offer-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Styling for offer descriptions */
+.offer. offer-dec {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Styling the user status on the header */
+#userStatus {
+    color: #007bff;
+    text-align: right;
+    max-width: 300px;
+    margin-left: auto;
+}
+
+/* Media query for screens with a max width of 700px */
+@media screen and (max-width: 700px) {
+    header {
+        padding: 0.5rem;
+    }
+
+    #menuButton {
+        display: block;
+        padding: 10px;
+    }
+
+    #burgerMenu nav ul {
+        display: block;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    #burgerMenu nav ul li {
+        margin: 5px 0;
+    }
+
+    #burgerMenu nav ul li a {
+        display: block;
+        padding: 10px;
+        color: #FFFFFF;
+    }
+
+    nav a {
+        font-size: larger;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .video-container {
+        margin-bottom: 15px;
+    }
+
+    .responsive-iframe {
+        height: auto;
+    }
+
+    .offers {
+        justify-content: center;
+    }
+
+    .offer {
+        margin: 10px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+
+    .fdiv {
+        margin: 0 10px;
+        text-align: center;
+    }
+
+    footer ul {
+        padding: 0;
+    }
+
+    footer li {
+        margin-bottom: 10px;
+    }
+}

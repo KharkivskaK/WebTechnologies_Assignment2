@@ -1,0 +1,245 @@
+/* Basic styling for the table */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Table header styles */
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+/* Table header background color */
+th {
+    background-color: #f2f2f2;
+}
+
+/* Hhover effect to table rows */
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Styling the first column */
+td:first-child {
+    font-weight: bold;
+}
+
+/* Styling alternate rows */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Cart Container Styling */
+#cart-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+/* Table Styling */
+#cart-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Table header and cell styles within Cart Container */
+#cart-container th, #cart-container td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Styling alternate rows within Cart Container */
+#cart-container tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Image Styling within Cart Items */
+.item_img {
+    width: 50px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Button Styling */
+#cart-container button {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover */
+#cart-container button:hover {
+    background-color: #0056b3;
+}
+
+/* Total Price Styling */
+#purchase_price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Styling for the 'Empty Cart' message */
+#empty_cart {
+    display: flex;
+    height: 30px;
+    padding-left: 20px;
+}
+
+/* Styling for the 'Empty Cart' link */
+#empty_cart a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Styling for the 'Empty Cart' link */
+#binImg {
+    width: 20px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for the bin icon */
+#empty_cart a:hover #binImg {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* Styling for the checkout form */
+form.checkout-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for submit button within checkout form */
+form.checkout-form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #5c6bc0;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for submit button within checkout form */
+form.checkout-form input[type="submit"]:hover {
+    background-color: #3949ab;
+}
+
+/* Styles for messages */
+.alert {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    text-align: center;
+}
+
+/* Error message styling */
+.alert-error {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+
+/* Checkout button styling */
+.checkout-button {
+    display: inline-block;
+    width: auto;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #007bff;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for checkout button */
+.checkout-button:hover {
+    background-color: #0056b3;
+}
+
+/* Media query for screens with a max width of 700px */
+@media screen and (max-width: 700px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr {
+        margin-bottom: 15px;
+    }
+
+    td {
+        border: none;
+        border-bottom: 1px solid #ddd;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    td:before {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+
+    #cart-container {
+        overflow-x: auto;
+    }
+
+    .item_img {
+        width: 50px;
+    }
+
+    form.checkout-form {
+        padding: 10px;
+    }
+
+    form.checkout-form input[type="submit"] {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .checkout-button, #cart-container button {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+
+    .searchBar, .form-buttons, ul.categories {
+        flex-direction: column;
+    }
+
+    .categories>li>button, .form-buttons input, ul.categories a {
+        margin: 5px 0;
+    }
+}

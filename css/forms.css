@@ -1,0 +1,85 @@
+/* Form container */
+.form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    min-height: 300px;
+    min-width: 300px;
+    align-items: center;
+    margin: auto;
+}
+
+/* Form title */
+.form h1 {
+    margin-top: 0;
+    color: #333;
+    text-align: center;
+}
+
+/* Form fields styling */
+.formField {
+    margin-bottom: 15px;
+}
+
+/* Styling for form field labels */
+.formField label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Styling for text, password, and email input fields within form fields */
+.formField input[type="text"],
+.formField input[type="password"],
+.formField input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Button styling */
+button {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    /*margin: auto;*/
+}
+
+/* Button hover */
+button:hover {
+    background-color: #003d82;
+}
+
+/* Error message styling */
+p {
+    margin-top: 0;
+    font-size: 0.9rem;
+}
+
+/* Media query for screens with a max width of 700px */
+@media screen and (max-width: 700px) {
+    .form {
+        width: 90%;
+        padding: 15px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .formField input[type="text"],
+    .formField input[type="password"],
+    .formField input[type="email"],
+    button {
+        padding: 8px;
+    }
+
+    button {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+}
